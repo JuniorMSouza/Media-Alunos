@@ -44,3 +44,4 @@ O sistema também impede erros comuns, como:
 ### 1️⃣ Clone o repositório
 
 ```bash
+https://github.com/JuniorMSouza/Media-Alunos.git
