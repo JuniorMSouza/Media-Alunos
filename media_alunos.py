@@ -2,13 +2,19 @@
 nome = input("Digite o nome completo do Aluno")
 
 def pedir_nota():
-    nota = float(input("Digite a Nota: "))
+    while True:
+        try:
+            nota = float(input("Digite a Nota: "))
 
-    while nota <0 or nota > 10 :
-        print("Erro! Digite uma nota de 0 a 10 apenas")
-        nota = float(input("Digite novamente"))
+            if nota <0 or nota > 10 :
+                print("Erro! Digite uma nota de 0 a 10 apenas")
+            else:
+                return nota
 
-    return nota
+        except ValueError:
+            print("Erro! digite apenas números!")
+
+
 
 nota1 = pedir_nota()
 nota2 = pedir_nota()
